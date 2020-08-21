@@ -7,16 +7,20 @@ class PhotosViewModel {
     let service = HttpService()
     
     init() {}
-    
-    func getPhotos(url: URL, completion: @escaping (Result<[Photos]?, HttpError>) -> Void) {
+        
+    func getPhotos(url: URL, search: Bool, completion: @escaping (Result<Bool, HttpError>) -> Void) {
         service.get(url: url) { result in
             switch result {
             case .success(let data):
                 if data != nil {
                    do {
-                        self.photos = try JSONDecoder().decode([Photos].self, from: data!)
-                        print(self.photos)
-                        completion(.success(self.photos))
+                        if search {
+                            self.photosList = try JSONDecoder().decode(PhotosList.self, from: data!)
+                            self.photos = self.photosList?.results
+                        } else {
+                            self.photos = try JSONDecoder().decode([Photos].self, from: data!)
+                        }
+                        completion(.success(true))                        
                     } catch let DecodingError.typeMismatch(type, context)  {
                        print("Type '\(type)' mismatch:", context.debugDescription)
                        print("codingPath:", context.codingPath)

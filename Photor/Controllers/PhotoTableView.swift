@@ -25,8 +25,4 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         return self.view.bounds.height * 25/100
     }
     
-    /*func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 500
-    }*/
-    
 }
