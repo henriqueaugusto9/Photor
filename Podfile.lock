@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (5.2.2)
+  - UnsplashPhotoPicker (1.1.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - UnsplashPhotoPicker (~> 1.1.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - UnsplashPhotoPicker
+
+SPEC CHECKSUMS:
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  UnsplashPhotoPicker: 86520e34cfded8fb4a41910bf87afe571906b4e3
+
+PODFILE CHECKSUM: a24841cab7575c368289c1908db9f7e852a651f8
+
+COCOAPODS: 1.9.1

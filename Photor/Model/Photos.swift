@@ -1,9 +1,11 @@
-//
-//  Photos.swift
-//  Photor
-//
-//  Created by Lucas Daniel on 21/08/20.
-//  Copyright © 2020 Lucas. All rights reserved.
-//
-
 import Foundation
+
+struct Photos : Model {
+    let id : String?
+    let urls : Urls?
+    
+    init(id: String?, urls: Urls?) throws {
+        self.id = id
+        self.urls = urls
+    }
+}

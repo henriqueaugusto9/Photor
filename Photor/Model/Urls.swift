@@ -1,9 +1,18 @@
-//
-//  Urls.swift
-//  Photor
-//
-//  Created by Lucas Daniel on 21/08/20.
-//  Copyright © 2020 Lucas. All rights reserved.
-//
-
 import Foundation
+
+struct Urls : Model {
+    let raw : String?
+    let full : String?
+    let regular : String?
+    let small : String?
+    let thumb : String?
+
+    init(raw : String?, full : String?, regular : String?, small : String?, thumb : String?) {
+        self.raw = raw
+        self.full = full
+        self.regular = regular
+        self.small = small
+        self.thumb = thumb
+    }
+
+}

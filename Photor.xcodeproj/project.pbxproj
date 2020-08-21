@@ -3,17 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		6AAE374324F00E0A00B02829 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAE374224F00E0A00B02829 /* AppDelegate.swift */; };
 		6AAE374524F00E0A00B02829 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAE374424F00E0A00B02829 /* SceneDelegate.swift */; };
-		6AAE374724F00E0A00B02829 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAE374624F00E0A00B02829 /* ViewController.swift */; };
 		6AAE374A24F00E0A00B02829 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AAE374824F00E0A00B02829 /* Main.storyboard */; };
 		6AAE374C24F00E1000B02829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AAE374B24F00E1000B02829 /* Assets.xcassets */; };
 		6AAE374F24F00E1000B02829 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AAE374D24F00E1000B02829 /* LaunchScreen.storyboard */; };
 		6AAE375A24F00E1100B02829 /* PhotorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAE375924F00E1100B02829 /* PhotorTests.swift */; };
+		6AAE376A24F00F6600B02829 /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAE376924F00F6600B02829 /* HttpService.swift */; };
+		6AAE376E24F0103F00B02829 /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAE376D24F0103F00B02829 /* HttpError.swift */; };
+		6AAE377124F0108C00B02829 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAE377024F0108C00B02829 /* Constants.swift */; };
+		6AAE377424F010A000B02829 /* GetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAE377324F010A000B02829 /* GetProtocol.swift */; };
+		6AAE377624F0189600B02829 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAE377524F0189600B02829 /* Photos.swift */; };
+		6AAE377824F01B7500B02829 /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAE377724F01B7500B02829 /* Urls.swift */; };
+		6AAE377A24F01C0E00B02829 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAE377924F01C0E00B02829 /* Model.swift */; };
+		6AAE377D24F01C4E00B02829 /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAE377C24F01C4E00B02829 /* DataExtensions.swift */; };
+		6AAE377F24F01C6900B02829 /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAE377E24F01C6900B02829 /* ViewControllerExtensions.swift */; };
+		6AAE378224F01CAF00B02829 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAE378124F01CAF00B02829 /* MainViewController.swift */; };
+		6AAE378424F01D2A00B02829 /* PhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAE378324F01D2A00B02829 /* PhotosViewModel.swift */; };
+		6AAE378724F021A000B02829 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAE378624F021A000B02829 /* PhotoCell.swift */; };
+		6AAE378924F0229300B02829 /* PhotoTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAE378824F0229300B02829 /* PhotoTableView.swift */; };
+		6AAE378B24F0236300B02829 /* PhotosList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAE378A24F0236300B02829 /* PhotosList.swift */; };
+		6AAE378E24F0254700B02829 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6AAE378D24F0254700B02829 /* Kingfisher */; };
+		B89EECCF436F7A83E07375F8 /* Pods_Photor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D515771848BE4933423076 /* Pods_Photor.framework */; };
+		FFC16034CE8569CB68885007 /* Pods_PhotorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 082C8B3266E3367E7F1CA5D6 /* Pods_PhotorTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,10 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		082C8B3266E3367E7F1CA5D6 /* Pods_PhotorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14F8549E036C58D330D6204C /* Pods-Photor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Photor.release.xcconfig"; path = "Target Support Files/Pods-Photor/Pods-Photor.release.xcconfig"; sourceTree = "<group>"; };
+		3E21BB36F84EACE2914072AA /* Pods-PhotorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotorTests.release.xcconfig"; path = "Target Support Files/Pods-PhotorTests/Pods-PhotorTests.release.xcconfig"; sourceTree = "<group>"; };
+		422006B691477D161AFFD511 /* Pods-PhotorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotorTests.debug.xcconfig"; path = "Target Support Files/Pods-PhotorTests/Pods-PhotorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6AAE373F24F00E0A00B02829 /* Photor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AAE374224F00E0A00B02829 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AAE374424F00E0A00B02829 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6AAE374624F00E0A00B02829 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6AAE374924F00E0A00B02829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6AAE374B24F00E1000B02829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AAE374E24F00E1000B02829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +57,22 @@
 		6AAE375524F00E1100B02829 /* PhotorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AAE375924F00E1100B02829 /* PhotorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotorTests.swift; sourceTree = "<group>"; };
 		6AAE375B24F00E1100B02829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AAE376924F00F6600B02829 /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
+		6AAE376D24F0103F00B02829 /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
+		6AAE377024F0108C00B02829 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6AAE377324F010A000B02829 /* GetProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProtocol.swift; sourceTree = "<group>"; };
+		6AAE377524F0189600B02829 /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
+		6AAE377724F01B7500B02829 /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
+		6AAE377924F01C0E00B02829 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		6AAE377C24F01C4E00B02829 /* DataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtensions.swift; sourceTree = "<group>"; };
+		6AAE377E24F01C6900B02829 /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
+		6AAE378124F01CAF00B02829 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		6AAE378324F01D2A00B02829 /* PhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewModel.swift; sourceTree = "<group>"; };
+		6AAE378624F021A000B02829 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		6AAE378824F0229300B02829 /* PhotoTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableView.swift; sourceTree = "<group>"; };
+		6AAE378A24F0236300B02829 /* PhotosList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosList.swift; sourceTree = "<group>"; };
+		A3D515771848BE4933423076 /* Pods_Photor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Photor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E94391F3459DD74C5E79DF94 /* Pods-Photor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Photor.debug.xcconfig"; path = "Target Support Files/Pods-Photor/Pods-Photor.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AAE378E24F0254700B02829 /* Kingfisher in Frameworks */,
+				B89EECCF436F7A83E07375F8 /* Pods_Photor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +89,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFC16034CE8569CB68885007 /* Pods_PhotorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		021B278E4BCA740848E5B601 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3D515771848BE4933423076 /* Pods_Photor.framework */,
+				082C8B3266E3367E7F1CA5D6 /* Pods_PhotorTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6AAE373624F00E0A00B02829 = {
 			isa = PBXGroup;
 			children = (
 				6AAE374124F00E0A00B02829 /* Photor */,
 				6AAE375824F00E1100B02829 /* PhotorTests */,
 				6AAE374024F00E0A00B02829 /* Products */,
+				CC9F4A22E5485F8391F29A18 /* Pods */,
+				021B278E4BCA740848E5B601 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,12 +128,16 @@
 		6AAE374124F00E0A00B02829 /* Photor */ = {
 			isa = PBXGroup;
 			children = (
-				6AAE374224F00E0A00B02829 /* AppDelegate.swift */,
-				6AAE374424F00E0A00B02829 /* SceneDelegate.swift */,
-				6AAE374624F00E0A00B02829 /* ViewController.swift */,
-				6AAE374824F00E0A00B02829 /* Main.storyboard */,
-				6AAE374B24F00E1000B02829 /* Assets.xcassets */,
-				6AAE374D24F00E1000B02829 /* LaunchScreen.storyboard */,
+				6AAE378524F0218F00B02829 /* CustomCells */,
+				6AAE377B24F01C4100B02829 /* Extensions */,
+				6AAE377224F0109200B02829 /* Protocol */,
+				6AAE376F24F0107D00B02829 /* Constants */,
+				6AAE376824F00EA800B02829 /* Service */,
+				6AAE376724F00E3E00B02829 /* Supporting Files */,
+				6AAE376624F00E3500B02829 /* ViewModel */,
+				6AAE378024F01C9C00B02829 /* Controllers */,
+				6AAE376524F00E2E00B02829 /* View */,
+				6AAE376424F00E1C00B02829 /* Model */,
 				6AAE375024F00E1000B02829 /* Info.plist */,
 			);
 			path = Photor;
@@ -99,6 +152,106 @@
 			path = PhotorTests;
 			sourceTree = "<group>";
 		};
+		6AAE376424F00E1C00B02829 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6AAE377524F0189600B02829 /* Photos.swift */,
+				6AAE377724F01B7500B02829 /* Urls.swift */,
+				6AAE377924F01C0E00B02829 /* Model.swift */,
+				6AAE378A24F0236300B02829 /* PhotosList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6AAE376524F00E2E00B02829 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6AAE374824F00E0A00B02829 /* Main.storyboard */,
+				6AAE374D24F00E1000B02829 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6AAE376624F00E3500B02829 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6AAE378324F01D2A00B02829 /* PhotosViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6AAE376724F00E3E00B02829 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6AAE374224F00E0A00B02829 /* AppDelegate.swift */,
+				6AAE374424F00E0A00B02829 /* SceneDelegate.swift */,
+				6AAE374B24F00E1000B02829 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6AAE376824F00EA800B02829 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6AAE376924F00F6600B02829 /* HttpService.swift */,
+				6AAE376D24F0103F00B02829 /* HttpError.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		6AAE376F24F0107D00B02829 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				6AAE377024F0108C00B02829 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		6AAE377224F0109200B02829 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				6AAE377324F010A000B02829 /* GetProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		6AAE377B24F01C4100B02829 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6AAE377C24F01C4E00B02829 /* DataExtensions.swift */,
+				6AAE377E24F01C6900B02829 /* ViewControllerExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6AAE378024F01C9C00B02829 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6AAE378124F01CAF00B02829 /* MainViewController.swift */,
+				6AAE378824F0229300B02829 /* PhotoTableView.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6AAE378524F0218F00B02829 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				6AAE378624F021A000B02829 /* PhotoCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		CC9F4A22E5485F8391F29A18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E94391F3459DD74C5E79DF94 /* Pods-Photor.debug.xcconfig */,
+				14F8549E036C58D330D6204C /* Pods-Photor.release.xcconfig */,
+				422006B691477D161AFFD511 /* Pods-PhotorTests.debug.xcconfig */,
+				3E21BB36F84EACE2914072AA /* Pods-PhotorTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,15 +259,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AAE375E24F00E1100B02829 /* Build configuration list for PBXNativeTarget "Photor" */;
 			buildPhases = (
+				F0EC1D896B3E8FA0F72B41FE /* [CP] Check Pods Manifest.lock */,
 				6AAE373B24F00E0A00B02829 /* Sources */,
 				6AAE373C24F00E0A00B02829 /* Frameworks */,
 				6AAE373D24F00E0A00B02829 /* Resources */,
+				F1F42687D0CE12A4D9AA301D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Photor;
+			packageProductDependencies = (
+				6AAE378D24F0254700B02829 /* Kingfisher */,
+			);
 			productName = Photor;
 			productReference = 6AAE373F24F00E0A00B02829 /* Photor.app */;
 			productType = "com.apple.product-type.application";
@@ -123,6 +281,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AAE376124F00E1100B02829 /* Build configuration list for PBXNativeTarget "PhotorTests" */;
 			buildPhases = (
+				BE3F8904AC8B3CEEB15435EC /* [CP] Check Pods Manifest.lock */,
 				6AAE375124F00E1100B02829 /* Sources */,
 				6AAE375224F00E1100B02829 /* Frameworks */,
 				6AAE375324F00E1100B02829 /* Resources */,
@@ -165,6 +324,9 @@
 				Base,
 			);
 			mainGroup = 6AAE373624F00E0A00B02829;
+			packageReferences = (
+				6AAE378C24F0254700B02829 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 6AAE374024F00E0A00B02829 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -195,14 +357,91 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BE3F8904AC8B3CEEB15435EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0EC1D896B3E8FA0F72B41FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Photor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1F42687D0CE12A4D9AA301D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Photor/Pods-Photor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Photor/Pods-Photor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Photor/Pods-Photor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6AAE373B24F00E0A00B02829 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AAE374724F00E0A00B02829 /* ViewController.swift in Sources */,
+				6AAE378724F021A000B02829 /* PhotoCell.swift in Sources */,
+				6AAE377F24F01C6900B02829 /* ViewControllerExtensions.swift in Sources */,
+				6AAE377A24F01C0E00B02829 /* Model.swift in Sources */,
+				6AAE376A24F00F6600B02829 /* HttpService.swift in Sources */,
+				6AAE378B24F0236300B02829 /* PhotosList.swift in Sources */,
+				6AAE378224F01CAF00B02829 /* MainViewController.swift in Sources */,
+				6AAE378924F0229300B02829 /* PhotoTableView.swift in Sources */,
+				6AAE376E24F0103F00B02829 /* HttpError.swift in Sources */,
+				6AAE378424F01D2A00B02829 /* PhotosViewModel.swift in Sources */,
+				6AAE377D24F01C4E00B02829 /* DataExtensions.swift in Sources */,
 				6AAE374324F00E0A00B02829 /* AppDelegate.swift in Sources */,
+				6AAE377824F01B7500B02829 /* Urls.swift in Sources */,
+				6AAE377424F010A000B02829 /* GetProtocol.swift in Sources */,
 				6AAE374524F00E0A00B02829 /* SceneDelegate.swift in Sources */,
+				6AAE377124F0108C00B02829 /* Constants.swift in Sources */,
+				6AAE377624F0189600B02829 /* Photos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +599,7 @@
 		};
 		6AAE375F24F00E1100B02829 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E94391F3459DD74C5E79DF94 /* Pods-Photor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,6 +618,7 @@
 		};
 		6AAE376024F00E1100B02829 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14F8549E036C58D330D6204C /* Pods-Photor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -396,6 +637,7 @@
 		};
 		6AAE376224F00E1100B02829 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 422006B691477D161AFFD511 /* Pods-PhotorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -418,6 +660,7 @@
 		};
 		6AAE376324F00E1100B02829 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E21BB36F84EACE2914072AA /* Pods-PhotorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -469,6 +712,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6AAE378C24F0254700B02829 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.15.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6AAE378D24F0254700B02829 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6AAE378C24F0254700B02829 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6AAE373724F00E0A00B02829 /* Project object */;
 }

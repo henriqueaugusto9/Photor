@@ -1,9 +1,5 @@
-//
-//  PhotoCell.swift
-//  Photor
-//
-//  Created by Lucas Daniel on 21/08/20.
-//  Copyright © 2020 Lucas. All rights reserved.
-//
+import UIKit
 
-import Foundation
+class PhotoCell: UITableViewCell {
+    @IBOutlet weak var photoImage: UIImageView!
+}
