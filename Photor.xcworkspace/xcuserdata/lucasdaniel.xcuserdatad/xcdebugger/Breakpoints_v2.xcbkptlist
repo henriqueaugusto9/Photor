@@ -7,15 +7,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1E4B0E3C-7EFA-4C06-BFFD-E8391DFF6861"
+            uuid = "12AC6FA1-A4FA-4F6D-AB8E-F3A0C4296B8C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Photor/ViewModel/PhotosViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
             landmarkName = "getPhotos(url:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -23,49 +23,192 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6C5156BD-4C95-4178-8A52-01AB09D04461"
+            uuid = "CEFDE03A-391B-4452-B429-D8CB63651264"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Photor/Service/HttpService.swift"
+            filePath = "Photor/Controllers/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "get(url:completion:)"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "searchBarSearchButtonClicked(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "57895FB4-AA52-4057-9BD0-B85FFFB6563E"
+            uuid = "5E210D33-45A7-4874-B279-67A21A149A61"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Photor/Service/HttpService.swift"
+            filePath = "Photor/Controllers/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "get(url:completion:)"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "getPhotos(url:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5E210D33-45A7-4874-B279-67A21A149A61 - fd32f1e8028ee23f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Photor.MainViewController.getPhotos(url: Foundation.URL) -&gt; ()"
+                  moduleName = "Photor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucasdaniel/Desktop/Photor/Photor/Controllers/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "34">
+               </Location>
+               <Location
+                  uuid = "5E210D33-45A7-4874-B279-67A21A149A61 - c16f9c68886bd57"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;Photor.Photos&gt;&gt;, Photor.HttpError&gt;) -&gt; () in Photor.MainViewController.getPhotos(url: Foundation.URL) -&gt; ()"
+                  moduleName = "Photor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucasdaniel/Desktop/Photor/Photor/Controllers/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "166">
+               </Location>
+               <Location
+                  uuid = "5E210D33-45A7-4874-B279-67A21A149A61 - 5091a2d478fa4c6d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;Photor.Photos&gt;&gt;, Photor.HttpError&gt;) -&gt; () in Photor.MainViewController.getPhotos(url: Foundation.URL) -&gt; ()"
+                  moduleName = "Photor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucasdaniel/Desktop/Photor/Photor/Controllers/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3970B5C6-20BF-4501-AE12-94270A1F4354"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Photor/Controllers/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "getPhotos(url:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3970B5C6-20BF-4501-AE12-94270A1F4354 - c16f9c68886bd57"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;Photor.Photos&gt;&gt;, Photor.HttpError&gt;) -&gt; () in Photor.MainViewController.getPhotos(url: Foundation.URL) -&gt; ()"
+                  moduleName = "Photor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucasdaniel/Desktop/Photor/Photor/Controllers/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "206">
+               </Location>
+               <Location
+                  uuid = "3970B5C6-20BF-4501-AE12-94270A1F4354 - 5091a2d478fa4c6d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;Photor.Photos&gt;&gt;, Photor.HttpError&gt;) -&gt; () in Photor.MainViewController.getPhotos(url: Foundation.URL) -&gt; ()"
+                  moduleName = "Photor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucasdaniel/Desktop/Photor/Photor/Controllers/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "633EC579-4886-4C7B-8BCE-81F5F4331C24"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Photor/Controllers/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "getPhotos(url:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BBCEF554-37D0-4FA4-AB51-4C88F71900C4"
+            uuid = "675E9A96-0691-4329-80B8-59A421221BA3"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Photor/Service/HttpService.swift"
+            filePath = "Photor/ViewModel/PhotosViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "get(url:completion:)"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "getPhotos(url:completion:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "675E9A96-0691-4329-80B8-59A421221BA3 - 2a1c78b43cebc23"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Photor.PhotosViewModel.getPhotos(url: Foundation.URL, completion: (Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;Photor.Photos&gt;&gt;, Photor.HttpError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Photor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucasdaniel/Desktop/Photor/Photor/ViewModel/PhotosViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "675E9A96-0691-4329-80B8-59A421221BA3 - 591564eee512670f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Foundation.Data&gt;, Photor.HttpError&gt;) -&gt; () in Photor.PhotosViewModel.getPhotos(url: Foundation.URL, completion: (Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;Photor.Photos&gt;&gt;, Photor.HttpError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Photor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucasdaniel/Desktop/Photor/Photor/ViewModel/PhotosViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "340">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

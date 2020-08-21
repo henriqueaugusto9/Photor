@@ -9,8 +9,8 @@ public class HttpService: HttpGetProtocol {
         self.session = session
     }
     
-    public func get(url: URL, completion: @escaping (Result<Data?, HttpError>) -> Void) {
-        session.request(url, method: .post, encoding: JSONEncoding.default).responseData { dataResponse in
+    public func get(url: URL, completion: @escaping (Result<Data?, HttpError>) -> Void) {        
+        session.request(url, method: .get, encoding: JSONEncoding.default).responseData { dataResponse in
             guard let statusCode = dataResponse.response?.statusCode else { return
                 completion(.failure(.noConnectivity)) }
             switch dataResponse.result {
