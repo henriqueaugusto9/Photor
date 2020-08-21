@@ -162,6 +162,7 @@
 		6AAE375824F00E1100B02829 /* PhotorTests */ = {
 			isa = PBXGroup;
 			children = (
+				6AAE37A424F0677B00B02829 /* Controllers */,
 				6AAE37A224F0675300B02829 /* Service */,
 				6AAE37A024F064FE00B02829 /* TestFactories.swift */,
 				6AAE375B24F00E1100B02829 /* Info.plist */,
@@ -266,7 +267,6 @@
 		6AAE37A224F0675300B02829 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				6AAE37A424F0677B00B02829 /* Controllers */,
 				6AAE37A324F0676800B02829 /* Http */,
 			);
 			path = Service;
