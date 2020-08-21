@@ -10,7 +10,7 @@
         <!--Photor-->
         <scene sceneID="PF6-4e-PZ9">
             <objects>
-                <viewController id="dtJ-K7-htJ" customClass="MainViewController" customModule="Photor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="dtJ-K7-htJ" customClass="MainViewController" customModule="Photor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D9D-9o-rvN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
